@@ -56,3 +56,23 @@ genes = {
 }
 
 # Criar seu código a partir daqui
+
+genes = {
+    "BRCA1": 81188,
+    "TP53": 19054,
+    "EGFR": 192612,
+    "APOE": 3597,
+    "CFTR": 250000,
+    "HBB": 1606,
+    "F8": 186000,
+    "DMD": 2400000,
+    "HTT": 169451,
+    "FMR1": 38000,
+}
+
+nome_do_gene = input("Digite o nome do gene: ")
+
+if nome_do_gene in genes:
+    print (f"O tamanho do gene {nome_do_gene} é {genes[nome_do_gene]} pb.  ")
+else:
+    print ("Gene não encontrado.")
